@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.myapplication.Activity.codeConfirmation">
+
+    <ImageView
+        android:id="@+id/backView"
+        android:layout_width="18.41dp"
+        android:layout_height="15.41dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="45dp"
+
+        android:src="@drawable/back" />
+
+    <!-- Sign In -->
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="30.93dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="24dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/signUp"
+        android:textAppearance="@style/sign_in"
+        android:translationY="-2.23sp" />
+
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:gravity="center"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/icon1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginRight="121dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/one_more_thing"
+        android:textAppearance="@style/sign_in"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationY="-2.23sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="116dp"
+
+        android:layout_below="@+id/sign_up"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/nverification_code"
+        android:textAppearance="@style/sign_in"
+        android:textSize="36sp"
+        android:translationY="-2.23sp" />
+
+
+    <EditText
+        android:id="@+id/verifyNum1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_below="@+id/icon1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginLeft="219dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
+        android:background="#F7F8FC"
+        android:elegantTextHeight="true"
+        android:gravity="center_horizontal"
+        android:hint="."
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/verifyNum2"
+        android:padding="10px"
+        android:textColorHint="#7C7B8A"
+        android:textSize="36sp" ><requestFocus/></EditText>
+
+
+
+    <EditText
+        android:id="@+id/verifyNum2"
+
+        android:layout_width="74dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/icon1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="303dp"
+        android:layout_marginRight="303dp"
+        android:background="#F7F8FC"
+        android:elegantTextHeight="true"
+        android:gravity="center_horizontal"
+        android:hint="."
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/verifyNum2"
+        android:padding="10px"
+        android:textColorHint="#7C7B8A"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/verifyNum3"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/icon1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginRight="210dp"
+        android:background="#F7F8FC"
+        android:elegantTextHeight="true"
+        android:gravity="center_horizontal"
+        android:hint="."
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/verifyNum2"
+        android:padding="10px"
+        android:textColorHint="#7C7B8A"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/verifyNum4"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/icon1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="311dp"
+        android:layout_marginLeft="311dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="#F7F8FC"
+        android:elegantTextHeight="true"
+        android:gravity="center_horizontal"
+        android:hint="."
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/verifyNum2"
+        android:padding="10px"
+        android:textColorHint="#7C7B8A"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/sign_in_with_phone"
+        android:layout_width="200dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/verifyNum3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/resend_code"
+        android:textAppearance="@style/hi_let_s_se"
+        android:textColor="#21A453"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationY="-2.23sp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="45dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/verifyNum4"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="284dp"
+        android:text="timer"
+        android:textColor="#21A453"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="15dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/verifyNum3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="253dp"
+        android:layout_marginRight="253dp"
+        android:gravity="center">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/tv_Next_step"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/verifyNum3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="#F7F8FC"
+        android:enabled="false"
+        android:hint="NEXT STEP"
+        android:textColor="#7C7B8A"
+        android:textColorHint="#7C7B8A" />
+
+    <TextView
+        android:id="@+id/Terms_and_condition_text"
+        android:layout_width="327dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/tv_Next_step"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/a_message_verification_code"
+        android:textColor="#31333B"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="130dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/Terms_and_condition_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginRight="129dp"
+        app:srcCompat="@drawable/home" />
+
+    <ProgressBar
+        android:id="@+id/pd"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/verifyNum1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="287dp"
+        android:indeterminateDrawable="@drawable/progressbar" />
+
+
+</RelativeLayout>

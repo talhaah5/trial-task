@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activity.SignInWithPhone">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="18.41dp"
+        android:layout_height="15.41dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+
+        android:src="@drawable/back" />
+
+    <!-- Sign In -->
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="188dp"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginRight="191dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="24dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/signUp"
+        android:textAppearance="@style/sign_in"
+        android:translationY="-2.23sp" />
+
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/icon1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginRight="147dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/no_problem"
+        android:textAppearance="@style/sign_in"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationY="-2.23sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="124dp"
+
+        android:layout_below="@+id/sign_up"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginRight="71dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/sign_in_nphone"
+        android:textAppearance="@style/sign_in"
+        android:textSize="36sp"
+        android:translationY="-2.23sp" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="86dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/icon1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="220dp"
+        android:background="#F7F8FC"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_defaultNameCode="US"
+        app:ccp_showNameCode="false"
+        app:ccp_showPhoneCode="false"
+        app:ccp_textSize="20sp" />
+
+    <EditText
+        android:id="@+id/phoneText"
+
+        android:layout_width="225dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/icon1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_toEndOf="@+id/ccp"
+        android:layout_toRightOf="@+id/ccp"
+        android:background="#F7F8FC"
+        android:hint="@string/phone"
+        android:includeFontPadding="true"
+        android:inputType="phone"
+        android:paddingStart="20sp"
+        android:paddingLeft="20sp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/tv_Next_step"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/phoneText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="313dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:background="#F7F8FC"
+        android:enabled="false"
+        android:hint="@string/next"
+        android:textColor="#7C7B8A"
+        android:textColorHint="#7C7B8A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Terms_and_condition_text"
+        android:layout_width="327dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/tv_Next_step"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/a_message"
+        android:textColor="#31333B"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="130dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/tv_Next_step"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginRight="139dp"
+        app:srcCompat="@drawable/home" />
+
+
+</RelativeLayout>

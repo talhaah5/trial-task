@@ -1,0 +1,9 @@
+<!-- drawable/full_name.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_height="56dp"
+    android:layout_width="327dp"
+    android:background="#ACADAF"
+    >
+</vector>

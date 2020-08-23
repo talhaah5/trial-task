@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="terms_and_services">By signing up you agree to <u><font color='#21A453'>Terms of Service </font></u>\nand
+        you\'ve read our <u><font color='#21A453'>Privacy Policy. </font></u></string>
+    <string name="signIn">Sign In</string>
+    <string name="signUp">Sign Up</string>
+    <string name="hifirst">Hi! Let’s set you up.</string>
+    <string name="createAccount">Create your \naccount today:</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+<string name="next">Next Step</string>
+    <string name="hi">Hi</string>
+    <string name="contactInfo">Please enter your \nemail &amp; phone Info:</string>
+    <string name="email">Email Address</string>
+    <string name="phone">Phone Number</string>
+    <string name="great">Great, noted!</string>
+    <string name="secure">Lastly, secure\nyour account:</string>
+    <string name="pass">Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="createed">You have just \nCreated an account!</string>
+    <string name="welcome">Welcome to Marketplace.</string>
+    <string name="fellFree">Feel free to continue exploring.\nLooking forward to your first order!</string>
+    <string name="con">Continue</string>
+    <string name="spruce">Spruce Box</string>
+    <string name="market">Marketplace</string>
+    <string name="get_your_first">Sign In and Get Your First\nOn-Demand Delivery Today</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="apple_id">Apple ID</string>
+    <string name="sign_in_with_phone">Sign In with phone</string>
+    <string name="sign_in_later">Sign In Later</string>
+    <string name="no_problem">No problem</string>
+    <string name="sign_in_nphone">Sign in with your \nphone number:</string>
+    <string name="a_message">A message will be sent to your phone number\nwith a verification code to sign in.</string>
+    <string name="one_more_thing">One more thing</string>
+    <string name="nverification_code">Please type in your\nverification code:</string>
+    <string name="resend_code">Resend code</string>
+    <string name="a_message_verification_code">A message has been sent to your phone number\nwith a verification code to sign in.</string>
+    <string name="welcomeback_to_marketplace">Welcomeback to Marketplace.</string>
+    <string name="glad_you_re_back_in_nlet_s_get_shopping">Glad you\'re back in.\nLet\'s get shopping.</string>
+    <string name="success">Success!</string>
+</resources>
+<!--By signing up you agree to Terms of Service and
+you've read our Privacy Policy.-->

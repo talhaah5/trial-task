@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ContactinfoActivity"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="18.41dp"
+        android:layout_height="15.41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="45dp"
+        app:srcCompat="@drawable/back" />
+
+    <!-- Sign In -->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30.93dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginRight="190dp"
+        app:srcCompat="@drawable/icon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="168.3dp"
+        android:layout_height="133.22dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        app:srcCompat="@drawable/main" />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="24dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/signIn"
+        android:textAppearance="@style/sign_in"
+        android:translationY="-2.23sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mailLayout"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/create_your"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#F7F8FC"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_mail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:background="#F7F8FC"
+            android:fontFamily="sans-serif"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#7C7B8A" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/hi_let_s_se"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="117dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="114dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/hi"
+        android:textColor="#31333B"
+        android:textSize="27sp"
+        android:translationY="-2.23sp" />
+
+
+    <TextView
+        android:id="@+id/create_your"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hi_let_s_se"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="11sp"
+        android:text="@string/contactInfo"
+        android:textAppearance="@style/create_your"
+        android:textColor="#31333B" />
+
+    <View
+        android:id="@+id/mailline"
+        android:layout_width="327dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/mailLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:background="#ffffff" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="86dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@+id/error"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_toStartOf="@+id/phoneText"
+        android:layout_toLeftOf="@+id/phoneText"
+        android:background="#F7F8FC"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_defaultNameCode="US"
+        app:ccp_showNameCode="false"
+        app:ccp_showPhoneCode="false"
+        app:ccp_textSize="20sp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error"
+        android:layout_width="327dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/mailLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="#D44333"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="225dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/mailline"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="#F7F8FC"
+        android:hint="@string/phone"
+        android:includeFontPadding="true"
+        android:inputType="phone"
+        android:paddingStart="20sp"
+        android:paddingLeft="20sp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="327dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/phoneText"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        app:srcCompat="@drawable/second" />
+
+    <Button
+        android:id="@+id/tv_Next_step"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:background="#F7F8FC"
+        android:enabled="false"
+        android:hint="@string/next"
+        android:textColor="#7C7B8A"
+        android:textColorHint="#7C7B8A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Terms_and_condition_text"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Next_step"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/terms_and_services"
+        android:textColor="#31333B"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="130dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/Terms_and_condition_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginLeft="139dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/home" />
+
+</RelativeLayout>

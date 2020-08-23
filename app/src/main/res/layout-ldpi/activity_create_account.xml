@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activity.CreateAccount">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="39.93dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+
+        app:srcCompat="@drawable/icon" />
+
+    <!-- Sign In -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150.3dp"
+        android:layout_height="120.22dp"
+        android:layout_marginLeft="82.98dp"
+        android:layout_marginTop="50dp"
+
+        app:srcCompat="@drawable/main" />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="55dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="24dp"
+        android:lineSpacingExtra="4sp"
+        android:text="sign In"
+        android:textAppearance="@style/sign_in"
+        android:translationY="-2.23sp" />
+
+    <TextView
+        android:id="@+id/hi_let_s_se"
+        android:layout_width="159dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="180dp"
+        android:gravity="top"
+        android:lineSpacingExtra="4sp"
+        android:text="Hi! Let’s set you up."
+        android:textAppearance="@style/hi_let_s_se"
+        android:textColor="#31333B"
+        android:translationY="-2.23sp" />
+
+    <TextView
+        android:id="@+id/create_your"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/hi_let_s_se"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="11sp"
+        android:text="Create your account today:"
+        android:textAppearance="@style/create_your"
+        android:textColor="#31333B"
+        app:autoSizeTextType="uniform" />
+
+    <EditText
+        android:id="@+id/tv_first_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="245dp"
+        android:width="1dp"
+        android:background="#F7F8FC"
+        android:hint="FIRST NAME"
+        android:textAllCaps="false"
+        android:textColorHint="#7C7B8A"
+        android:textIsSelectable="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/tv_last_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="290dp"
+        android:width="1dp"
+        android:background="#F7F8FC"
+        android:hint="LAST NAME"
+        android:textColorHint="#7C7B8A" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="340dp"
+
+        app:srcCompat="@drawable/first" />
+
+    <Button
+        android:id="@+id/tv_Next_step"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="350dp"
+        android:background="#F7F8FC"
+        android:enabled="false"
+        android:hint="NEXT STEP"
+        android:textColor="#7C7B8A"
+        android:textColorHint="#7C7B8A" />
+
+    <TextView
+        android:id="@+id/Terms_and_condition_text"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="390dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/terms_and_services"
+        android:textColor="#31333B"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
